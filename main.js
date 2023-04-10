@@ -28,12 +28,7 @@ function decoder(data) {
 }
 
 $('#encode').on('click',() => {
-  $('#result').val((encoder($('#source').val())));
-  $('#srcLength').html($('#source').val().length);
-  $('#resLength').html($('#result').val().length);
-  let ratio = $('#result').val().length / $('#source').val().length
-  $('#ratio').html((Math.round((1-ratio) * 100)/100)*100 +'%');
-  
+  $('#result').val((encoder($('#source').val())));  
 })
 $('#decode').on('click',() => {
   $('#result').val((decoder($('#source').val())));
