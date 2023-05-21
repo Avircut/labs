@@ -10,7 +10,6 @@ export default defineConfig({
       build: {
         rollupOptions: {
           input: {
-            arith: fileURLToPath(new URL('arith.html', import.meta.url)),
             accordion: fileURLToPath(
              new URL('index.html', import.meta.url) // typo here: componentes
             ),
@@ -18,7 +17,6 @@ export default defineConfig({
         },
       },
      input: {
-        arith: fileURLToPath(new URL('arith.html', import.meta.url)),
        accordion: fileURLToPath(
           new URL('index.html', import.meta.url),
         ),
